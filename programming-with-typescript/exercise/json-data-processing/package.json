@@ -1,0 +1,17 @@
+{
+  "name": "json-exercise",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "NODE_OPTIONS=--experimental-vm-modules jest --watchAll"
+  },
+  "type": "module",
+  "license": "MIT",
+  "dependencies": {
+    "jest": "^29.3.1"
+  },
+  "devDependencies": {
+    "@jest/globals": "^29.3.1",
+    "jest-extended": "^3.2.0"
+  }
+}
