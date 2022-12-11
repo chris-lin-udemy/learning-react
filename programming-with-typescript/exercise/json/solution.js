@@ -35,7 +35,7 @@ export const transform = profilesJsonStr => {
   const thisYear = new Date().getFullYear();
   const yobToAge = yob => thisYear - parseInt(yob);
 
-  return JSON.parse(profilesJsonStr)
+  const transformed = JSON.parse(profilesJsonStr)
     .reduce((acc, p) => {
       const age = yobToAge(p.yearOfBirth);
       if (!acc[p.location]) acc[p.location] = {};
@@ -46,4 +46,6 @@ export const transform = profilesJsonStr => {
 
       return acc;
     }, {});
+
+  return JSON.stringify(transformed);
 };

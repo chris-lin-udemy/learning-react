@@ -5,7 +5,7 @@ import { transform } from './transform.js';
 describe('JSON data transformation', () => {
   const raw = fs.readFileSync('./profiles.json');
   const profiles = JSON.parse(raw);
-  const transformed = transform(raw);
+  const transformed = JSON.parse(transform(raw));
 
   test('location as the primary key', () => {
     const states = profiles.map(p => p.location).reduce((acc, s) => { acc.add(s); return acc;}, new Set());
