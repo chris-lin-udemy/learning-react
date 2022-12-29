@@ -1,5 +1,5 @@
 /**
- * Takes in a JSON string of user profiles in the format:
+ * The function takes a JSON string of user profiles in the format:
  *   { 
  *     id: string,
  *     firstName: string,
