@@ -1,6 +1,6 @@
 /**
  * This function takes an integer number n and returns an array of
- * all the prime numbers between 1 and n in sorted order.
+ * all the prime numbers from 1 to n in sorted order.
  * 
  * For example, calling the function with 50 as the parameter,
  * getPrimeNumbers(50), would return an array of
