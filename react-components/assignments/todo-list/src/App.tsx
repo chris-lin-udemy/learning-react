@@ -1,7 +1,7 @@
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <h1>Hi there!</h1>
+      <h1>Hi, there!</h1>
     </div>
   );
 }
